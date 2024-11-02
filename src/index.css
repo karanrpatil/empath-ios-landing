@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --foreground: 144 97 249;
+    --color-1: 0 100% 63%;
+    --color-2: 270 100% 63%;
+    --color-3: 210 100% 63%;
+    --color-4: 195 100% 63%;
+    --color-5: 90 100% 63%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased text-gray-600;
+  }
+
+  .mandala-pattern {
+    background-image: radial-gradient(circle at center, transparent 30%, rgba(99, 102, 241, 0.03) 30%),
+                      radial-gradient(circle at center, rgba(99, 102, 241, 0.02) 60%, transparent 60%);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+  }
+}
+
+.container {
+  @apply max-w-7xl mx-auto;
+}
+
+.transition-transform {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.space-rhythm {
+  @apply py-24 md:py-32;
+}
+
+.lotus-border {
+  position: relative;
+}
+
+.lotus-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent);
+}
