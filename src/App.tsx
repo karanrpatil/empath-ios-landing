@@ -7,6 +7,7 @@ import Benefits from './components/Benefits';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import Philosophy from './pages/Philosophy';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/philosophy" element={<Philosophy />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </div>

@@ -27,7 +27,7 @@ export default function Footer() {
             <h3 className="font-semibold text-white mb-6">Learn More</h3>
             <ul className="space-y-4">
               <li><Link to="/philosophy" className="hover:text-wisdom-400 transition-colors">Our Philosophy</Link></li>
-              <li><a href="#" className="hover:text-wisdom-400 transition-colors">Privacy Promise</a></li>
+              <li><Link to="/privacy" className="hover:text-wisdom-400 transition-colors">Privacy Promise</Link></li>
               <li><a href="#" className="hover:text-wisdom-400 transition-colors">Terms of Service</a></li>
             </ul>
           </div>
