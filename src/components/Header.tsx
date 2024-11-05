@@ -56,7 +56,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2">
             <Logo className="h-8 w-8 text-wisdom-400" />
-            <span className="text-xl font-serif font-bold text-gray-900">Empath</span>
+            <span className="text-xl font-bold text-gray-900 font-serif">Empath</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
