@@ -80,7 +80,7 @@ export default function PrivacyPolicy() {
               
               <div className="flex gap-6">
                 <span className="text-2xl text-gray-500">3</span>
-                <h3 className="text-4xl font-light">We secure your data with military-grade encryption</h3>
+                <h3 className="text-4xl font-light">You control who sees your data</h3>
               </div>
             </div>
           </section>
