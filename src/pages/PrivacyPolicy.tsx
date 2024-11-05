@@ -90,20 +90,53 @@ export default function PrivacyPolicy() {
             <div>
               <h2 className="text-5xl font-light mb-6">Personal means private</h2>
               <p className="text-xl text-gray-400 font-light max-w-3xl">
-                All of your personal data is secured using InformationVault, Empath's industry standard encryption technology.
+                All of your personal data is secured using InformationVault, Empath's military-grade, quantum-resistant encryption technology.
               </p>
             </div>
 
             <div>
-              <h2 className="text-5xl font-light mb-6">You decide who had access</h2>
+              <h2 className="text-5xl font-light mb-6">You decide who has access</h2>
               <p className="text-xl text-gray-400 font-light max-w-3xl mb-12">
                 By default, your data remains completely private and inaccessible to others. But if you choose to connect Empath with your therapist, you will have the power to selectively share insights with them. You can revoke access at any time, ensuring your privacy preferences are always respected.
               </p>
             </div>
+
+            {/* New Wearables Section */}
+            <div>
+              <h2 className="text-5xl font-light mb-6">Integrations with Wearables</h2>
+              <div className="space-y-8">
+                <p className="text-xl text-gray-400 font-light max-w-3xl">
+                  Our integrations with wearables allow us to gather insights like steps, energy expenditure, and sleep patterns to identify holistic patterns and help you become self-aware in a meaningful way. All data remains encrypted and private.
+                </p>
+                
+                <div className="grid grid-cols-3 gap-8">
+                  <div className="bg-white/5 p-6 rounded-xl border border-white/10">
+                    <h3 className="text-xl font-medium mb-3">Data Collection</h3>
+                    <p className="text-gray-400">
+                      We only collect the data you explicitly allow through your device settings
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white/5 p-6 rounded-xl border border-white/10">
+                    <h3 className="text-xl font-medium mb-3">Data Storage</h3>
+                    <p className="text-gray-400">
+                      All wearable data is encrypted and stored with the same military-grade protection
+                    </p>
+                  </div>
+                  
+                  <div className="bg-white/5 p-6 rounded-xl border border-white/10">
+                    <h3 className="text-xl font-medium mb-3">Your Control</h3>
+                    <p className="text-gray-400">
+                      Disconnect or modify your device connections at any time through settings
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
 
-          {/* AI Rules Section */}
-          <section className="max-w-6xl -mx-16">
+          {/* AI Rules Section - Fixed alignment */}
+          <section>
             <h2 className="text-5xl font-light mb-24">The rules we're following for building Empath</h2>
             <div className="space-y-20">
               {[
@@ -158,7 +191,7 @@ export default function PrivacyPolicy() {
                   description: "A lot of ultra-modern LLMs are stuck on old training data. AI should be able to help you based on the world today."
                 }
               ].map((item, index) => (
-                <div key={index} className="grid grid-cols-2 gap-8 items-start">
+                <div key={index} className="grid grid-cols-[2fr,3fr] gap-8 items-start">
                   <div className="flex gap-4 items-baseline">
                     <span className="text-2xl text-gray-500 font-light">{item.number}</span>
                     <h3 className="text-4xl font-light">{item.title}</h3>
